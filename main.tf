@@ -144,8 +144,8 @@ resource "aws_db_instance" "my-db-instance" {
   engine                 = "mysql"
   instance_class         = "db.t3.micro"
   allocated_storage      = 20
-  username               = "Pradyumna200319"
-  password               = "Omvwsuv200319"
+  username               = "username"
+  password               = "password"
   db_subnet_group_name   = aws_db_subnet_group.my-subnet-group.name
   vpc_security_group_ids = [aws_security_group.rds-sg.id]
   publicly_accessible    = false
